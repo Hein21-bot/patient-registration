@@ -12,8 +12,7 @@ import PatientDetail from '@/src/components/PatientDetail';
 export default function StaffPage() {
     const { sessions, deleteSession } = useSocket();
     const [staffUser, setStaffUser] = useState<Omit<StaffUser, 'password'> | null>(null);
-    const stored = localStorage.getItem('staffUser');
-    const [selectedPatient, setSelectedPatient] = useState<Session | null>(stored ? JSON.parse(stored) : null);
+    const [selectedPatient, setSelectedPatient] = useState<Session | null>(null);
 
     useEffect(() => {
         const savedStaffUser = localStorage.getItem('staffUser');
