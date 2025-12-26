@@ -6,6 +6,9 @@ import Link from 'next/link';
 export const metadata: Metadata = {
     title: 'Agnos Health',
     description: 'Healthcare application',
+    icons: {
+        icon: '/agnos-favicon.jpg',
+    },
 }
 
 export default function RootLayout({
