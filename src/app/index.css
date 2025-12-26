@@ -1,0 +1,8 @@
+.shadow-primary_blue-200 {
+    --tw-shadow-color: #c6d6f0;
+    --tw-shadow: var(--tw-shadow-colored);
+}
+
+.text-primary_blue {
+    color: #1a59c2;
+}
